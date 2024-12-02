@@ -1,7 +1,7 @@
 # XUartPs_WriteReg
 ## XUartPs_WriteReg函数用法简介
 ### 1.基本定义
-基本定义为 **XUartPs_WriteReg(BaseAddress, RegOffset, RegisterValue)**，**baseaddr**是外设的基地址；**reg_offset**是寄存器的偏移地址；**RegisterValue**是要写入该寄存器的数据。该函数用于配置uart
+基本定义为 `XUartPs_WriteReg(BaseAddress, RegOffset, RegisterValue)`，`baseaddr`是外设的基地址；`reg_offset`是寄存器的偏移地址；`RegisterValue`是要写入该寄存器的数据。该函数用于配置uart
 ### 2.实例:清除接收溢出中断标志
 **XUartPs_WriteReg(uart_instance_ptr->Config.BaseAddress , XUARTPS_ISR_OFFSET , XUARTPS_IXR_RXOVR)**
 - **uart_instance_ptr**是一个指向**XUartPs**结构体实例的指针，**XUartPs**结构体包含了 UART 配置信息
